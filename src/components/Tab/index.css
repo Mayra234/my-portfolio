@@ -1,0 +1,11 @@
+.nav-item {
+  flex-basis: 25%;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.nav-link :active {
+  color: #e91e63;
+}

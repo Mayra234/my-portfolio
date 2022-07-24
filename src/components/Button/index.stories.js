@@ -4,7 +4,9 @@ export default {
   title: 'Components/Button',
 };
 
-export const Overview = () => (
-  /*html */
-  <div>${Button({ children: 'Contáctame' })}</div>
-);
+export const Overview = () => {
+  return /*html */ `<div>${Button({
+    children: 'Contáctame',
+    palette: 'secondary',
+  })}</div>`;
+};

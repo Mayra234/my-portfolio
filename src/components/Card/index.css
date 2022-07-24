@@ -1,0 +1,18 @@
+.card {
+  margin-bottom: 30px;
+  box-shadow: 0 20px 40px rgb(0 0 0 / 20%);
+  padding: 5%;
+  text-align: center;
+}
+
+.icon {
+  font-size: 30px;
+}
+
+.h2 {
+  margin: 20px 0;
+}
+
+p {
+  margin: 0 0 10px;
+}

@@ -1,13 +1,13 @@
-import { Tab } from './index';
+import { Separator } from './index';
 
 export default {
-  title: 'Components/Tab',
+  title: 'Components/Separator',
 };
 
 export const Overview = () => {
   return /*html*/ `
     <div>
-        ${Tab({ text: 'Estudios' })}
+        ${Separator()}
     </div>
     `;
 };

@@ -1,0 +1,28 @@
+.content-flags {
+  height: 100vh;
+  justify-content: center;
+}
+
+.container-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-tab {
+  margin-top: 70px;
+  width: 100%;
+  max-width: 50%;
+  border-radius: 10px;
+}
+
+.container-card :hover {
+  background: #e91e63;
+  color: #fff;
+}
+
+.title-card {
+  border-bottom: 1px solid #e3e9ed;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}

@@ -1,3 +1,15 @@
 .navlinks {
-  margin-top: 15px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (min-width: 1002px) {
+  .navlinks {
+    flex-direction: row;
+  }
 }

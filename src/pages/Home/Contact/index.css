@@ -1,0 +1,23 @@
+.container-contact {
+  padding: 60px 0;
+}
+
+.content-cards-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.contact-me {
+  margin: 11px;
+  height: auto;
+  animation-delay: 0.2s;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.icon-social {
+  color: #212121;
+}

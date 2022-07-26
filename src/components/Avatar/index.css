@@ -4,16 +4,21 @@
   align-items: center;
   min-width: 32px;
   margin: 0 10px;
-  padding: 17px;
+  padding: 22px;
+  font-size: 32px;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-family: sans-serif;
 }
 
-a {
+.a {
+  padding: 25px 0;
   display: flex;
   align-items: center;
   flex-direction: row;
 }
 
-.image {
+.image-avatar {
   border: 1px solid gray;
   border-radius: 100%;
   width: 50px;
@@ -23,7 +28,7 @@ a {
   align-items: center;
 }
 
-img {
+.img {
   height: 100%;
   width: 100%;
   border-radius: 100%;

@@ -4,8 +4,15 @@
   margin-top: 0;
   margin-bottom: 0;
   font-size: 18px;
+  box-shadow: 0 20px 40px rgb(0 0 0 / 8%);
+  background: whitesmoke;
 }
 
-.nav-link :active {
+.nav-link {
+  color: #232323;
+}
+
+.nav-link :hover {
   color: #e91e63;
+  background: rgb(244, 211, 214);
 }

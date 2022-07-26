@@ -3,4 +3,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  color: #ffffff;
+}
+
+.scroll {
+  background: #ffffff;
+  transition: all 0.4s;
 }

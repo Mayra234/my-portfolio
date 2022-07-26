@@ -3,11 +3,11 @@ import './index.css';
 export const Avatar = ({ image = '', mainText = '', className = '' } = {}) => {
   return /*html*/ `
     <div class="avatar ${className}">
-      <a>
-        <span class = 'image'>
+      <a class='a'>
+        <span class = 'image-avatar'>
           ${
             image
-              ? /*html */ `<img src="${image}" alt="${mainText}" />`
+              ? /*html */ `<img class='img' src="${image}" />`
               : `${mainText[0] || ''}`
           }
         </span>

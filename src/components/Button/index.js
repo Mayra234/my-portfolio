@@ -11,7 +11,8 @@ export const Button = ({
   if (palette === 'primary') {
     style = 'background: #e91e63';
   } else if (palette === 'secondary') {
-    style = 'background: transparent; border: 1px solid black';
+    style =
+      'background: transparent; width: 60px; height: 35px; border: 3px solid #ffffff;';
   }
   return /*html */ `<button
       id="${id}"

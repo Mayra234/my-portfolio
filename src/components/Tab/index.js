@@ -7,8 +7,10 @@ export const Tab = ({
   route = '',
 } = {}) => {
   return /*html*/ `
-    <li id='${id}' class='nav-item ${className}'>
-        <a href="${route}" class="nav-link">${text}</a>
+  <div class="container-tab">
+    <li id='${id}' class='tab-nav-item ${className}'>
+        <a href="${route}" class="tab-nav-link">${text}</a>
     </li>
+  </div>
     `;
 };

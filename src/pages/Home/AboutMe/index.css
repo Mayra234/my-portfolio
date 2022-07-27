@@ -7,7 +7,7 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.image {
+.image-about-me {
   height: 479px;
   width: 455px;
   background-image: url('../../../assets/image/about-1.jpg');
@@ -49,4 +49,12 @@
   font-size: 15px;
   color: #222;
   margin-bottom: 50px;
+}
+
+@media screen {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

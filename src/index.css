@@ -46,12 +46,6 @@ ul {
 a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
-}
-
-li {
-  padding: 15px;
-  font-weight: bold;
 }
 
 h6 {
@@ -60,10 +54,6 @@ h6 {
   margin-top: 10px;
   margin-bottom: 10px;
   line-height: 1.1;
-}
-
-.header {
-  height: 65px;
 }
 
 h1 {
@@ -81,6 +71,10 @@ h2 {
 h3 {
   font-weight: 600;
   margin-top: 20px;
+}
+
+.header {
+  height: 65px;
 }
 
 .introduction {

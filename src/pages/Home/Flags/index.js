@@ -8,7 +8,11 @@ export const Flags = () => {
   return /*html*/ `
     <div class='content-flags'>
         ${Tabs({
-          tabs: [{ text: 'Estudios' }, { text: 'Habilidades' }],
+          tabs: [
+            { text: 'Estudios' },
+            { text: 'Habilidades' },
+            { text: 'Experiencia' },
+          ],
           children: /*html*/ ` 
           <div class='container-card'>
             ${Card({

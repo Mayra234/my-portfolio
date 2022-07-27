@@ -1,18 +1,20 @@
-.nav-item {
+.container-tab :hover {
+  color: #e91e63;
+  box-shadow: 0 20px 40px rgb(0 0 0 / 8%);
+  background: whitesmoke;
+  width: 100%;
+}
+
+.tab-nav-item {
   flex-basis: 25%;
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 18px;
-  box-shadow: 0 20px 40px rgb(0 0 0 / 8%);
-  background: whitesmoke;
+  padding: 30px 10px;
+  text-transform: capitalize;
 }
 
-.nav-link {
+.tab-nav-link {
   color: #232323;
-}
-
-.nav-link :hover {
-  color: #e91e63;
-  background: rgb(244, 211, 214);
 }

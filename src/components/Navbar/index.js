@@ -1,15 +1,19 @@
-import { Avatar } from '../Avatar';
-import { ListNavLinks } from '../ListNavLinks';
 import './index.css';
 
-export const Navbar = ({ children = '', mainContent = '' } = {}) => {
+export const Navbar = ({
+  children = '',
+  mainContent = '',
+  className = '',
+  responsive = '',
+} = {}) => {
   return /*html*/ `
   <div class = "navbar">
     <div>
-        ${children}
+      ${children}
     </div>
-    <div>
-        ${mainContent}
+    <div class='body ${className}'>
+      ${responsive}
+      ${mainContent}
     </div>
   </div>
   `;

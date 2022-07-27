@@ -1,3 +1,5 @@
+import './index.css';
+
 export const NavLink = ({
   className = '',
   id = '',
@@ -5,7 +7,7 @@ export const NavLink = ({
   route = '#',
 } = {}) => {
   return /*html*/ `
-  <li class='li ${className}'>
+  <li class='nav ${className}'>
     <a class='link-nav' href='${route}' id = '${id}'>${text}</a>
   </li>`;
 };

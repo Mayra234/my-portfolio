@@ -1,6 +1,6 @@
 import './index.css';
 import { H2 } from '../../../components/H2';
-import { CardBasic } from '../../../components/CardBasic';
+import { Card } from '../../../components/Card';
 import { H3 } from '../../../components/H3';
 import { Separator } from '../../../components/Separator';
 
@@ -14,7 +14,7 @@ export const Projects = () => {
       Repudiandae odio cumque harum laborum dignissimos iste!
     </p>
     <div class='card-project'>
-        ${CardBasic({
+        ${Card({
           className: 'project',
           children: /*html*/ `
           <a class="link-project" href="">
@@ -29,7 +29,8 @@ export const Projects = () => {
           </p>
         `,
         })}
-        ${CardBasic({
+        ${Card({
+          palette: 'secondary',
           className: 'project',
           children: /*html*/ `
           <a class="link-project" href="">
@@ -44,7 +45,7 @@ export const Projects = () => {
           </p>
         `,
         })}
-        ${CardBasic({
+        ${Card({
           className: 'project',
           children: /*html*/ `
           <a class="link-project" href="">
@@ -59,7 +60,7 @@ export const Projects = () => {
           </p>
         `,
         })}
-        ${CardBasic({
+        ${Card({
           className: 'project',
           children: /*html*/ `
           <a class="link-project" href="">
@@ -74,7 +75,7 @@ export const Projects = () => {
           </p>
         `,
         })}
-        ${CardBasic({
+        ${Card({
           className: 'project',
           children: /*html*/ `
           <a class="link-project" href="">
@@ -89,7 +90,7 @@ export const Projects = () => {
           </p>
         `,
         })}
-        ${CardBasic({
+        ${Card({
           className: 'project',
           children: /*html*/ `
           <a class="link-project" href="">

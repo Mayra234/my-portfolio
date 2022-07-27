@@ -8,42 +8,39 @@ import { Button } from '../../components/Button';
 export const MainLayout = ({ children = '' } = {}) => {
   return /*html*/ `
     <div class="main-layout">
-      ${Header({
-        children: Navbar({
+     ${Header({
+       children: /*html*/ `
+        ${Navbar({
           children: /*html*/ `
-          ${Avatar({
-            mainText: 'Mayra',
-            image:
-              'https://static2.abc.es/media/play/2020/09/29/avatar-kE4H--1024x512@abc.jpeg',
-          })}
+            ${Avatar({ mainText: 'Mayra' })}
           `,
-          responsive: /*html*/ `
-          <div>
+          mainContent: /*html*/ `
+            ${ListNavLinks({
+              id: 'menu',
+              links: [
+                { text: 'Inicio', route: '#banner' },
+                { text: 'Banderas', route: '#flags' },
+                { text: 'Sobre mi', route: '#about-me' },
+                { text: 'Proyectos', route: '#project' },
+                { text: 'Contacto', route: '#contact' },
+              ],
+            })}
+          `,
+        })}
+      `,
+       mainContent: /*html*/ `
             ${Button({
+              id: 'button-menu',
               palette: 'secondary',
               className: 'bar-menu',
               children: /*html*/ `
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             `,
             })}
-          </div>
-          `,
-          mainContent: /*html*/ `
-          ${ListNavLinks({
-            links: [
-              { text: 'Inicio' },
-              { text: 'Sobre mi' },
-              { text: 'Banderas' },
-              { text: 'Hoja de vida' },
-              { text: 'Proyectos' },
-              { text: 'Contacto' },
-            ],
-          })}
-          `,
-        }),
-      })}
+            `,
+     })}
       ${children}
     </div>
     `;

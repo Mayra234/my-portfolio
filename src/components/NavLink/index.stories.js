@@ -6,6 +6,6 @@ export default {
 
 export const Overview = () => {
   return /*html*/ `
-  <div>${NavLink({ text: 'HOME' })}</div>
+  <div>${NavLink({ text: 'HOME', style: 'color: black' })}</div>
   `;
 };

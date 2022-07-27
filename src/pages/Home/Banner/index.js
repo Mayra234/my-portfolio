@@ -5,7 +5,9 @@ import { Button } from '../../../components/Button';
 
 export const Banner = () => {
   return /*html*/ `
-    <div class='home content-home'>
+    <div class='content-home'>
+      <a name='banner'></a>
+      <div class='banner'>
         <div class='welcome-text'>
             <section>
                 ${H3({
@@ -16,6 +18,7 @@ export const Banner = () => {
                 ${Button({ children: 'Contáctame', palette: 'primary' })}
             </section>
         </div>
+      </div>
     </div>
     `;
 };

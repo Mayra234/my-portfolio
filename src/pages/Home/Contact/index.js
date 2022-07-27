@@ -7,6 +7,7 @@ import { Icon } from '../../../components/Icon';
 export const Contact = () => {
   return /*html*/ `
     <div class='container-contact'>
+      <a name='contact'></a>
         ${H2({ className: 'title', children: 'Contacto' })}
         ${Separator()}
         <p class='introduction'>

@@ -1,4 +1,5 @@
 import './index.css';
+import { mounted } from '../../utils/mounted';
 
 export const Button = ({
   className = '',
@@ -11,8 +12,17 @@ export const Button = ({
   if (palette === 'primary') {
     style = 'background: #e91e63';
   } else if (palette === 'secondary') {
-    style = 'background: transparent';
+    style = { style };
   }
+
+  mounted(() => {
+    const buttonMenu = document.getElementById('button-menu');
+    const menu = document.getElementById('menu');
+    buttonMenu.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  });
+
   return /*html */ `
   <button
       id="${id}"

@@ -21,7 +21,7 @@ body {
   font-family: 'Poppins';
   font-size: 15px;
   font-weight: 400;
-  color: #333333;
+  color: #232323;
 }
 
 footer {
@@ -37,15 +37,16 @@ li {
 }
 
 ul {
-  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 a {
+  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  list-style-type: none;
 }
 
 h6 {

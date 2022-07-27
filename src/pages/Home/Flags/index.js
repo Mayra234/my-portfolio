@@ -7,6 +7,7 @@ import { H3 } from '../../../components/H3';
 export const Flags = () => {
   return /*html*/ `
     <div class='content-flags'>
+      <a name='flags'></a>
         ${Tabs({
           tabs: [
             { text: 'Estudios' },

@@ -4,8 +4,11 @@ import { H3 } from '../../../components/H3';
 
 export const AboutMe = () => {
   return /*html*/ `
-    <div class='container'>
-        <div class='image-about-me'></div>
+    <div class='container-about'>
+      
+        <div class='image-about-me'>
+          <a name='about-me'></a>
+        </div>
         <div class='text-about'>
           ${H2({ children: 'Mayra Diavanera', className: 'text-about-h2' })}
           ${H3({ children: 'Web Developer', className: 'text-about-h3' })}

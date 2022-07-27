@@ -1,4 +1,4 @@
-.container {
+.container-about {
   width: 970px;
   height: 100vh;
   margin: 0 auto;
@@ -10,10 +10,9 @@
 .image-about-me {
   height: 479px;
   width: 455px;
-  background-image: url('../../../assets/image/about-1.jpg');
+  background-image: url('https://mourithemes.com/marlon/marlon/images/about/about-1.jpg');
   background-position: center;
   background-size: cover;
-  position: relative;
 }
 
 .text-about {

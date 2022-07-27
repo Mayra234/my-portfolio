@@ -1,4 +1,4 @@
-.container-tab :hover {
+.container-tab :hover :active {
   width: 100%;
   height: 100%;
   color: #e91e63;

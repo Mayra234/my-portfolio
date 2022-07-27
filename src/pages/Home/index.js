@@ -6,10 +6,12 @@ import { Contact } from './Contact';
 
 export const Home = () => {
   return /*html*/ `
-  ${Banner()}
-  ${AboutMe()}
-  ${Flags()}
-  ${Projects()}
-  ${Contact()}
+    <div class='home'>
+      ${Banner()}
+      ${AboutMe()}
+      ${Flags()}
+      ${Projects()}
+      ${Contact()}
+    </div>
   `;
 };

@@ -12,6 +12,13 @@
   background: linear-gradient(145deg, #e2e8ec, #ffffff);
   border-radius: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .content-tabs {
+    flex-direction: row;
+  }
 }

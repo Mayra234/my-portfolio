@@ -3,6 +3,8 @@ import { Card } from '../../../components/Card';
 import './index.css';
 import { H1 } from '../../../components/H1';
 import { H3 } from '../../../components/H3';
+import { H2 } from '../../../components/H2';
+import { Separator } from '../../../components/Separator';
 
 export const Flags = () => {
   return /*html*/ `

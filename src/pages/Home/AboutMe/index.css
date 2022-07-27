@@ -1,21 +1,23 @@
 .container-about {
   width: 970px;
-  height: 100vh;
-  margin: 0 auto;
+  margin: 60px auto;
   padding: 0 15px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .image-about-me {
-  height: 479px;
-  width: 455px;
-  background-image: url('https://mourithemes.com/marlon/marlon/images/about/about-1.jpg');
-  background-position: center;
-  background-size: cover;
+  height: 100%;
+  max-height: 479px;
+  width: 100%;
+  max-width: 455px;
 }
 
 .text-about {
+  height: 100%;
+  max-width: 400px;
   margin-top: 90px;
   padding: 0 15px;
   display: flex;
@@ -50,10 +52,30 @@
   margin-bottom: 50px;
 }
 
-@media screen {
-  .container {
+@media (max-width: 768px) {
+  .container-about {
+    flex-direction: row;
+  }
+
+  .image-about-me {
+    height: 100%;
+    max-height: 637px;
+    max-width: 637px;
+    width: 100%;
+    background-image: url('https://mourithemes.com/marlon/marlon/images/about/about-1.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  .text-about {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
+  }
+  .p {
+    font-size: 15px;
+    color: #222;
+    margin-bottom: 50px;
+    text-align: center;
   }
 }

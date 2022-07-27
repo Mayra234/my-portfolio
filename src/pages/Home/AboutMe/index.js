@@ -4,9 +4,9 @@ import { H3 } from '../../../components/H3';
 
 export const AboutMe = () => {
   return /*html*/ `
-    <div class='container-about'>
-      
+    <div class='container-about'>  
         <div class='image-about-me'>
+          <img src="https://mourithemes.com/marlon/marlon/images/about/about-1.jpg">
           <a name='about-me'></a>
         </div>
         <div class='text-about'>
@@ -16,7 +16,7 @@ export const AboutMe = () => {
             Web Developer with 5+ years of experience in designing and developing user interfaces,
              testing, debugging and tracing staff within e-commerce technologies. 
              Proven ability in optimizing web functionalities that improve data retrieval and workflow efficiencies. 
-            </p>
+          </p>
         </div>
     </div>
     `;

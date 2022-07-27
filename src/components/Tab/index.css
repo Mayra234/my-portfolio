@@ -1,8 +1,9 @@
 .container-tab :hover {
-  color: #e91e63;
-  box-shadow: 0 20px 40px rgb(0 0 0 / 8%);
-  background: whitesmoke;
   width: 100%;
+  height: 100%;
+  color: #e91e63;
+  box-shadow: 0 20px 40px rgba(204, 203, 203, 0.08);
+  background: transparent;
 }
 
 .tab-nav-item {

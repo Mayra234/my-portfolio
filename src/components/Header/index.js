@@ -9,10 +9,10 @@ export const Header = ({
   className = '',
   children = '',
   style = '',
-  mainContent = '',
+  menuResponsive = '',
 } = {}) => {
   return /*html*/ `<div class='header ${className}' style="${style}">
     ${children}
-    ${mainContent}
+    ${menuResponsive}
   </div>`;
 };

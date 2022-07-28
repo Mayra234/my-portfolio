@@ -1,5 +1,6 @@
 .container-about {
-  width: 970px;
+  width: 100%;
+  min-width: 970px;
   margin: 60px auto;
   padding: 0 15px;
   display: flex;
@@ -16,6 +17,7 @@
 }
 
 .text-about {
+  margin-top: 20px;
   height: 100%;
   max-width: 400px;
   margin-top: 90px;
@@ -23,6 +25,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.image-about {
+  max-width: 400px;
+  max-height: 400px;
 }
 
 .text-about-h2 {
@@ -58,19 +65,19 @@
   }
 
   .image-about-me {
+    display: flex;
+    justify-content: center;
     height: 100%;
     max-height: 637px;
     max-width: 637px;
     width: 100%;
-    background-image: url('https://mourithemes.com/marlon/marlon/images/about/about-1.jpg');
-    background-position: center;
-    background-size: cover;
   }
   .text-about {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0;
+    margin-top: 4px;
+    max-width: 100%;
   }
   .p {
     font-size: 15px;

@@ -1,13 +1,14 @@
 import './index.css';
 import { H2 } from '../../../components/H2';
 import { H3 } from '../../../components/H3';
+import image1 from '../../../assets/image/about-1.jpg';
 
 export const AboutMe = () => {
   return /*html*/ `
+    <a name='about-me'></a>
     <div class='container-about'>  
         <div class='image-about-me'>
-          <img src="https://mourithemes.com/marlon/marlon/images/about/about-1.jpg">
-          <a name='about-me'></a>
+          <img class="image-about" src="${image1}"> 
         </div>
         <div class='text-about'>
           ${H2({ children: 'Mayra Diavanera', className: 'text-about-h2' })}

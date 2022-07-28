@@ -2,6 +2,10 @@
   margin-top: 60px;
   width: 100%;
   min-width: 970px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-card {
@@ -11,8 +15,7 @@
 }
 
 .card-tab {
-  margin-top: 70px;
-  width: 100%;
+  margin-top: 54px;
   max-width: 50%;
   border-radius: 10px;
 }
@@ -22,7 +25,20 @@
   color: #fff;
 }
 
+.h1 {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.information,
+.body-card {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 .title-card {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   border-bottom: 1px solid #e3e9ed;
   padding-bottom: 20px;
   margin-bottom: 20px;

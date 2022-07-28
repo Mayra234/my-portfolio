@@ -6,8 +6,8 @@ import { Icon } from '../../../components/Icon';
 
 export const Contact = () => {
   return /*html*/ `
+  <a name='contact'></a>
     <div class='container-contact'>
-      <a name='contact'></a>
         ${H2({ className: 'title', children: 'Contacto' })}
         ${Separator()}
         <p class='introduction'>
@@ -16,6 +16,7 @@ export const Contact = () => {
         </p>
         <div class="content-cards-contact">
             ${Card({
+              palette: 'primary',
               className: 'contact-me',
               children: /*html*/ `
             ${Icon({ icon: 'house' })}
@@ -26,6 +27,7 @@ export const Contact = () => {
             `,
             })}
             ${Card({
+              palette: 'primary',
               className: 'contact-me',
               children: /*html*/ `
             ${Icon({ icon: 'house' })}
@@ -36,6 +38,7 @@ export const Contact = () => {
             `,
             })}
             ${Card({
+              palette: 'primary',
               className: 'contact-me',
               children: /*html*/ `
             ${Icon({ icon: 'house' })}

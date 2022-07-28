@@ -32,7 +32,7 @@ export const Overview = () => {
           `,
         })}
       `,
-      mainContent: /*html*/ `
+      menuResponsive: /*html*/ `
             ${Button({
               palette: 'secondary',
               className: 'bar-menu',

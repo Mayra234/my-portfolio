@@ -1,10 +1,17 @@
 .container-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 970px;
   background: #f3f4f3;
   padding: 60px 0;
 }
 
 .card-project {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -48,4 +55,18 @@
 
 .text-card-project {
   line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .card-project {
+    flex-direction: column;
+  }
+  .link-project {
+    margin: 0 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .project {
+    width: 100%;
+  }
 }

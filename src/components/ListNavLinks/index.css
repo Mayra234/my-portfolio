@@ -6,11 +6,6 @@
   align-items: center;
 }
 
-.show {
-  margin-right: 0;
-  transition: all 0.5s;
-}
-
 @media (max-width: 768px) {
   .navlinks {
     flex-direction: column;
@@ -25,5 +20,9 @@
     background-color: rgba(0, 0, 0, 0.9);
     overflow-y: auto;
     margin-right: -100%;
+  }
+  .show {
+    margin-right: 0;
+    transition: all 0.5s;
   }
 }

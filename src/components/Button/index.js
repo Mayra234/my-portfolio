@@ -13,15 +13,18 @@ export const Button = ({
     style = 'background: #e91e63';
   } else if (palette === 'secondary') {
     style = { style };
-  }
-
-  mounted(() => {
-    const buttonMenu = document.getElementById('button-menu');
-    const menu = document.getElementById('menu');
-    buttonMenu.addEventListener('click', () => {
-      menu.classList.toggle('show');
+    mounted(() => {
+      const buttonMenu = document.getElementById('button-menu');
+      const menu = document.getElementById('menu');
+      buttonMenu.addEventListener('click', () => {
+        if (menu.classList.contains('show')) {
+          menu.classList.remove('show');
+        } else {
+          menu.classList.toggle('show');
+        }
+      });
     });
-  });
+  }
 
   return /*html */ `
   <button

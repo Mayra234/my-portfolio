@@ -6,8 +6,8 @@ import { Separator } from '../../../components/Separator';
 
 export const Projects = () => {
   return /*html*/ `
+  <a name='project'></a>
   <div class="container-projects">
-    <a name='project'></a>
     ${H2({ className: 'title', children: 'Mis Proyectos' })}
     ${Separator()}
     <p class='introduction'>

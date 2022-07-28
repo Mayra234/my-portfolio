@@ -8,8 +8,10 @@ import { Separator } from '../../../components/Separator';
 
 export const Flags = () => {
   return /*html*/ `
+    <a name='skills'></a>
     <div class='content-flags'>
-      <a name='flags'></a>
+      ${H2({ children: 'Habilidades' })}
+      ${Separator()}
         ${Tabs({
           tabs: [
             { text: 'Estudios' },
@@ -26,7 +28,7 @@ export const Flags = () => {
                 ${H3({ children: 'Universidad de DVI (1997 - 2001)' })}
               </div>
               <div class='body-card'>
-                <p>
+                <p class="information">
                   La educación debe ser muy
                   interactivo. Ut tincidunt est ac dolor aliquam sodales.
                   Phasellus sed mauris hendrerit, laoreet sem in, lobortis

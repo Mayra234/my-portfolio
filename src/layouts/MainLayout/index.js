@@ -19,7 +19,7 @@ export const MainLayout = ({ children = '' } = {}) => {
               id: 'menu',
               links: [
                 { text: 'Inicio', route: '#banner' },
-                { text: 'Banderas', route: '#flags' },
+                { text: 'Habilidades', route: '#skills' },
                 { text: 'Sobre mi', route: '#about-me' },
                 { text: 'Proyectos', route: '#project' },
                 { text: 'Contacto', route: '#contact' },
@@ -28,7 +28,7 @@ export const MainLayout = ({ children = '' } = {}) => {
           `,
         })}
       `,
-       mainContent: /*html*/ `
+       menuResponsive: /*html*/ `
             ${Button({
               id: 'button-menu',
               palette: 'secondary',

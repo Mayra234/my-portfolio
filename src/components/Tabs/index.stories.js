@@ -1,3 +1,4 @@
+import { mounted } from '../../utils/mounted';
 import { Card } from '../Card';
 import { Tabs } from './index';
 
@@ -6,17 +7,35 @@ export default {
 };
 
 export const Overview = () => {
+  let tabContent;
+
+  const renderTab = (index) => {
+    switch (index) {
+      case 0:
+        tabContent.innerHTML = /*html*/ `
+        <div>Content tab 1</div>
+        `;
+        break;
+      case 1:
+        tabContent.innerHTML = /*html*/ `
+        <div>Content tab 2</div>
+        `;
+        break;
+      default:
+        return '';
+    }
+  };
+
+  mounted(() => {
+    tabContent = document.getElementById('tab-content');
+    renderTab(0);
+  });
+
   return /*html*/ `
-    <div>
         ${Tabs({
           tabs: [{ text: 'Estudios' }, { text: 'Saberes' }],
-          children: /*html*/ `
-        <div>
-          ${Card({})}
-        </div>
-        `,
+          onChange: renderTab,
         })}
-        
-    </div>
+      <div id="tab-content"></div>
     `;
 };

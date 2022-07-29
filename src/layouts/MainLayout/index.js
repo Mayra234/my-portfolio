@@ -4,6 +4,7 @@ import { Navbar } from '../../components/Navbar';
 import { Avatar } from '../../components/Avatar';
 import { ListNavLinks } from '../../components/ListNavLinks';
 import { Button } from '../../components/Button';
+import { Footer } from '../../components/Footer';
 
 export const MainLayout = ({ children = '' } = {}) => {
   return /*html*/ `
@@ -19,8 +20,8 @@ export const MainLayout = ({ children = '' } = {}) => {
               id: 'menu',
               links: [
                 { text: 'Inicio', route: '#banner' },
-                { text: 'Habilidades', route: '#skills' },
                 { text: 'Sobre mi', route: '#about-me' },
+                { text: 'Habilidades', route: '#skills' },
                 { text: 'Proyectos', route: '#project' },
                 { text: 'Contacto', route: '#contact' },
               ],
@@ -42,6 +43,11 @@ export const MainLayout = ({ children = '' } = {}) => {
             `,
      })}
       ${children}
+      ${Footer({
+        children: /*html*/ `
+        <p>© All Right Reserved By </p>
+      `,
+      })}
     </div>
     `;
 };

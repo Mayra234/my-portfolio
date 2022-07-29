@@ -2,7 +2,7 @@ import './index.css';
 
 export const Footer = ({ children = '' } = {}) => {
   return /*html*/ `
-  <footer>
+  <footer class="footer">
     <div class = 'content-footer'>
       ${children}
     </div>

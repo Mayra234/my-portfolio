@@ -1,5 +1,6 @@
 .content-flags {
   margin-top: 60px;
+  padding-top: 30px;
   width: 100%;
   min-width: 970px;
   display: flex;
@@ -18,6 +19,11 @@
   margin-top: 54px;
   max-width: 50%;
   border-radius: 10px;
+  opacity: 0;
+}
+
+.card-tab.active {
+  opacity: 1;
 }
 
 .container-card :hover {

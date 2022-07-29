@@ -1,13 +1,17 @@
 .container-contact {
+  margin-top: 60px;
   width: 100%;
   min-width: 970px;
-  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .content-cards-contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
   padding-top: 40px;
 }
 
@@ -21,6 +25,10 @@
   animation-delay: 0.2s;
   border-radius: 10px;
   text-align: center;
+}
+
+.title-contact {
+  font-size: 16px;
 }
 
 .icon-social {

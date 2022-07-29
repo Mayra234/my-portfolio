@@ -1,15 +1,10 @@
 import './index.css';
 
-export const Tab = ({
-  id = '',
-  className = '',
-  text = '',
-  route = '',
-} = {}) => {
+export const Tab = ({ id = '', className = '', text = '' } = {}) => {
   return /*html*/ `
   <div class="container-tab">
     <li id='${id}' class='tab-nav-item ${className}'>
-        <a href="${route}" class="tab-nav-link">${text}</a>
+        <a class="tab-nav-link">${text}</a>
     </li>
   </div>
     `;

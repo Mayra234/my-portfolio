@@ -1,0 +1,18 @@
+.contact-me {
+  width: 100%;
+  max-width: 350px;
+  height: 100%;
+  max-height: 350px;
+  margin: 15px;
+  height: auto;
+  animation-delay: 0.2s;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .contact-me {
+    max-width: 95%;
+    overflow-x: hidden;
+  }
+}

@@ -24,7 +24,7 @@
   color: #333333;
 }
 
-.scroll .link-nav:active {
+.scroll .link-nav:focus {
   color: #e91e63;
   border-bottom: 1px solid #e91e63;
 }

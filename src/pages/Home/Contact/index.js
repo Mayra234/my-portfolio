@@ -1,8 +1,7 @@
+import './index.css';
 import { Separator } from '../../../components/Separator';
 import { H2 } from '../../../components/H2';
-import { Card } from '../../../components/Card';
-import './index.css';
-import { Icon } from '../../../components/Icon';
+import { ContactCard } from '../../../components/ContactCard';
 
 export const Contact = () => {
   return /*html*/ `
@@ -15,40 +14,27 @@ export const Contact = () => {
             Repudiandae odio cumque harum laborum dignissimos iste!
         </p>
         <div class="content-cards-contact">
-            ${Card({
-              palette: 'primary',
-              className: 'contact-me',
-              children: /*html*/ `
-            ${Icon({ icon: 'house' })}
-            ${H2({ children: 'Teléfono' })}
-            <p>
-                3122959854
-            </p>
-            `,
+            ${ContactCard({
+              title: 'Teléfono',
+              children: '3126098992',
             })}
-            ${Card({
-              palette: 'primary',
-              className: 'contact-me',
+            ${ContactCard({
+              title: 'Redes Sociales',
               children: /*html*/ `
-            ${Icon({ icon: 'house' })}
-            ${H2({ children: 'Email' })}
-            <p>
-                alejandradiavanera@gmail.com
-            </p>
-            `,
+              <span class="icon-social">F</span>
+              <span class="icon-social">W</span>
+              <span class="icon-social">I</span>
+              `,
             })}
-            ${Card({
-              palette: 'primary',
-              className: 'contact-me',
+            ${ContactCard({
+              title: 'Email',
+              children: '3126098992',
+            })}
+            ${ContactCard({
+              title: 'LinkedIn',
               children: /*html*/ `
-            ${Icon({ icon: 'house' })}
-            ${H2({ children: 'Redes Sociales' })}
-            <div class="social">
-                <a class="icon-social" href="">f</a>
-                <a class="icon-social" href="">i</a>
-                <a class="icon-social" href="">w</a>
-            </div>
-            `,
+              <a href="www.linkedin.com/in/alejandra-diavanera-3ab035231"></a>
+              `,
             })}
         </div>
     </div>

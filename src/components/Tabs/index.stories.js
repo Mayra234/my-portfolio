@@ -1,5 +1,7 @@
 import { mounted } from '../../utils/mounted';
-import { Card } from '../Card';
+import { Experiences } from '../Experiences';
+import { Skills } from '../Skills';
+import { Studies } from '../Studies';
 import { Tabs } from './index';
 
 export default {
@@ -13,12 +15,17 @@ export const Overview = () => {
     switch (index) {
       case 0:
         tabContent.innerHTML = /*html*/ `
-        <div>Content tab 1</div>
+        ${Studies()}
         `;
         break;
       case 1:
         tabContent.innerHTML = /*html*/ `
-        <div>Content tab 2</div>
+        ${Skills()}
+        `;
+        break;
+      case 3:
+        tabContent.innerHTML = /*html*/ `
+        ${Experiences()}
         `;
         break;
       default:

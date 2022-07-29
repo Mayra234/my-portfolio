@@ -1,27 +1,35 @@
-.skillbar {
-  display: table;
-  content: '';
+.skill-bar {
   margin-bottom: 24px;
   width: 100%;
 }
 
-.skillbar-title {
+.skill-bar-title {
   display: inline-block;
   vertical-align: middle;
 }
 
-.skillbar-percentage {
+.skill-bar-percentage {
   float: right;
   vertical-align: middle;
 }
 
-.skillbar-bar {
+.container-skill-bar {
   background: #000;
   width: 100%;
   height: 5px;
 }
 
-.skillbar-child {
+.skill-bar-child {
+  animation: fillBars 2.5s 1;
   height: 100%;
   background: #e91e63;
+}
+
+@keyframes fillBars {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }

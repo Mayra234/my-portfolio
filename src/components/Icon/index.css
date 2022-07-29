@@ -1,4 +1,8 @@
 .icon {
   font-size: 30px;
   color: #e91e63;
+  min-width: 80px;
+  width: 100%;
+  min-height: 80px;
+  height: 100%;
 }

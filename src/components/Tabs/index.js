@@ -25,6 +25,6 @@ export const Tabs = ({
       <ul class='tabs ${className}'>
       ${tabs.map((tab) => Tab({ text: tab.text })).join('')}
       </ul>
-    <div>
+    </div>
     `;
 };

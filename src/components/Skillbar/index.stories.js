@@ -1,12 +1,12 @@
-import { Skillbar } from './index';
+import { SkillBar } from './index';
 
 export default {
-  title: 'Components/Skillbar',
+  title: 'Components/SkillBar',
 };
 
 export const Overview = () => {
   return /*html*/ `
-    <div>${Skillbar({
+    <div>${SkillBar({
       mainText: 'HTML/CSS',
       percentage: 15,
     })}</div>

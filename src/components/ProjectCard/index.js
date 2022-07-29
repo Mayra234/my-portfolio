@@ -1,5 +1,6 @@
 import { Card } from '../Card';
 import { H3 } from '../H3';
+import { Icon } from '../Icon';
 import './index.css';
 
 export const ProjectCard = ({
@@ -13,12 +14,14 @@ export const ProjectCard = ({
       palette: 'secondary',
       className: 'project',
       children: /*html*/ `
-      <a class="link-project" href="${route}"></a>
-        ${figure}
+      <a class="link-project" href="${route}">
+        ${Icon({ icon: `${figure}` })}
         ${H3({ className: 'title-project', children: `${title}` })}
-        <div class="text-card-project">
-            ${children}
-        </div>
+      </a>
+      <div class="text-card-project">
+          ${children}
+      </div>
+      
     `,
     })}
     `;

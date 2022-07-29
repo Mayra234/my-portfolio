@@ -73,3 +73,26 @@ img {
   height: 100%;
   object-fit: cover;
 }
+
+.tab-content {
+  width: 100%;
+}
+
+.content-flags {
+  margin-top: 60px;
+  padding-top: 30px;
+  width: 100%;
+  min-width: 970px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 0 30px;
+}
+
+#tab-content {
+  width: 100%;
+}

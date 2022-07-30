@@ -86,6 +86,10 @@ img {
   object-fit: cover;
 }
 
+#tab-content {
+  width: 100%;
+}
+
 .content-resume {
   display: flex;
   flex-direction: column;
@@ -100,7 +104,8 @@ img {
   .container-projects,
   .container-contact,
   .content-banner,
-  .container-about {
+  .container-about,
+  .footer {
     min-width: 768px;
   }
 }

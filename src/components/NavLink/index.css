@@ -8,7 +8,14 @@
   font-size: 13px;
 }
 
-.link-nav.bar {
+.scroll .link-nav:active {
   color: #e91e63;
+  padding-bottom: 10px;
   border-bottom: 1px solid #e91e63;
+}
+
+@media (max-width: 768px) {
+  .scroll .link-nav {
+    color: #ffff;
+  }
 }

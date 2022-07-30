@@ -15,16 +15,20 @@ export const Contact = () => {
         <div class="content-cards-contact">
             ${ContactCard({
               title: 'Teléfono',
-              children: '3126098992',
+              children: /*html*/ `
+              <p>3126098992</p>
+              `,
             })}
             ${ContactCard({
               title: 'Email',
-              children: 'alejandradiavanera@gmail.com',
+              children: /*html*/ `
+              <p>alejandradiavanera@gmail.com</p>
+              `,
             })}
             ${ContactCard({
               title: 'LinkedIn',
               children: /*html*/ `
-              <a href="www.linkedin.com/in/alejandra-diavanera-3ab035231"></a>
+              <a href="www.linkedin.com/in/alejandra-diavanera-3ab035231">Mayra Diavanera</a>
               `,
             })}
         </div>

@@ -23,7 +23,9 @@ export const Tabs = ({
   return /*html*/ `
     <div class="content-tabs">
       <ul class='tabs ${className}'>
-      ${tabs.map((tab) => Tab({ text: tab.text })).join('')}
+      ${tabs
+        .map((tab) => Tab({ text: tab.text, className: tab.className }))
+        .join('')}
       </ul>
     </div>
     `;

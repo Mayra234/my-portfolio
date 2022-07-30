@@ -5,8 +5,7 @@ import { ContactCard } from '../../../components/ContactCard';
 
 export const Contact = () => {
   return /*html*/ `
-  <a name='contact'></a>
-    <div class='container-contact'>
+    <div id="contact" class='container-contact'>
         ${H2({ className: 'title', children: 'Contacto' })}
         ${Separator()}
         <p class='introduction'>
@@ -19,16 +18,8 @@ export const Contact = () => {
               children: '3126098992',
             })}
             ${ContactCard({
-              title: 'Redes Sociales',
-              children: /*html*/ `
-              <span class="icon-social">F</span>
-              <span class="icon-social">W</span>
-              <span class="icon-social">I</span>
-              `,
-            })}
-            ${ContactCard({
               title: 'Email',
-              children: '3126098992',
+              children: 'alejandradiavanera@gmail.com',
             })}
             ${ContactCard({
               title: 'LinkedIn',

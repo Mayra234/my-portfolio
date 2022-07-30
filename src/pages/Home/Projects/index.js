@@ -5,8 +5,7 @@ import { ProjectCard } from '../../../components/ProjectCard';
 
 export const Projects = () => {
   return /*html*/ `
-  <a name='project'></a>
-  <div class="container-projects">
+  <div id="project" class="container-projects">
     ${H2({ className: 'title', children: 'Proyectos' })}
         ${Separator()}
         <p class='introduction'>

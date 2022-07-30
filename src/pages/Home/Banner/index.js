@@ -5,8 +5,7 @@ import { Button } from '../../../components/Button';
 
 export const Banner = () => {
   return /*html*/ `
-    <div class='content-banner'>
-      <a name='banner'></a>
+    <div id="banner" class='content-banner'>
       <div class='banner'>
         <div class='welcome-text'>
             <section>

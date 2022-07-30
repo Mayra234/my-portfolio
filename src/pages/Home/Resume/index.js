@@ -6,7 +6,7 @@ import { Studies } from '../../../components/Studies';
 import { Skills } from '../../../components/Skills';
 import { Experiences } from '../../../components/Experiences';
 
-export const Flags = () => {
+export const Resume = () => {
   let tabContent;
 
   const renderTab = (index) => {
@@ -30,13 +30,15 @@ export const Flags = () => {
     renderTab(0);
   });
   return /*html*/ `
-    <a name='skills'></a>
-    <div class='content-flags'>
+    <div id="resume" class='content-resume'>
       ${H2({ children: 'Habilidades' })}
       ${Separator()}
         ${Tabs({
           tabs: [
-            { text: 'Estudios' },
+            {
+              text: 'Estudios',
+              className: 'active',
+            },
             { text: 'Habilidades' },
             { text: 'Experiencia' },
           ],

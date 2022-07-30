@@ -5,8 +5,7 @@ import image1 from '../../../assets/image/about-1.jpg';
 
 export const AboutMe = () => {
   return /*html*/ `
-    <a name='about-me'></a>
-    <div class='container-about'>  
+    <div id="about-me" class='container-about'>  
         <div class='image-about-me'>
           <img class="image-about" src="${image1}"> 
         </div>

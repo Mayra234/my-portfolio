@@ -1,16 +1,18 @@
 .container-contact {
   margin-top: 60px;
   width: 100%;
-  min-width: 970px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .content-cards-contact {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   padding-top: 40px;
 }

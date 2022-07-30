@@ -10,6 +10,13 @@
   flex-wrap: wrap;
 }
 
+#about-me,
+#banner,
+#contact,
+#resume {
+  scroll-margin-top: 100px;
+}
+
 body,
 html,
 .root {
@@ -17,11 +24,16 @@ html,
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #232323;
+  overflow-x: hidden;
 }
 
 ul,
@@ -74,25 +86,21 @@ img {
   object-fit: cover;
 }
 
-.tab-content {
-  width: 100%;
-}
-
-.content-flags {
-  margin-top: 60px;
-  padding-top: 30px;
-  width: 100%;
-  min-width: 970px;
+.content-resume {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.card {
-  margin: 0 30px;
-}
-
-#tab-content {
+  overflow-x: hidden;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .content-resume,
+  .container-projects,
+  .container-contact,
+  .content-banner,
+  .container-about {
+    min-width: 768px;
+  }
 }

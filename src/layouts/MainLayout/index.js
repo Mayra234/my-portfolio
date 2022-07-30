@@ -21,7 +21,7 @@ export const MainLayout = ({ children = '' } = {}) => {
               links: [
                 { text: 'Inicio', route: '#banner' },
                 { text: 'Sobre mi', route: '#about-me' },
-                { text: 'Habilidades', route: '#skills' },
+                { text: 'Hoja de vida', route: '#resume' },
                 { text: 'Proyectos', route: '#project' },
                 { text: 'Contacto', route: '#contact' },
               ],
